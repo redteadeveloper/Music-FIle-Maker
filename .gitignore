@@ -1,0 +1,11 @@
+/node_modules
+
+/audio
+/images
+
+/ffmpeg
+
+*.mp3
+*.jpg
+
+options.json
