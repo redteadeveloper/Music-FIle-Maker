@@ -12,6 +12,7 @@ Automatic music file maker.
 ### Prerequisites
 - [Node.js](https://nodejs.org)
 - [npm](https://www.npmjs.com/)
+- [git](https://git-scm.com/)
 - [ffmpeg](https://ffmpeg.org/download.html) (download and unzip at root)
 - [Last.fm API key](https://www.last.fm/api)
 - [YouTube Data API v3 key](https://console.cloud.google.com/marketplace/product/google/youtube.googleapis.com?q=search&referrer=search)
@@ -23,6 +24,7 @@ $ git clone
 $ cd Music-File-Maker
 $ npm install
 ```
+If you want, you can just download this repository instead of using ``git``.
 
 ### Step 2
 Create a file named ``options.json`` at root.
