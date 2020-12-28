@@ -1,6 +1,6 @@
 # Music File Maker
 
-Automatic music file maker.
+Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
 
 ## Features
 - Downloads mp3 file from YouTube
