@@ -1,10 +1,10 @@
 # Music File Maker
 
-Automatic music file maker.
+Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
 
 ## Features
 - Downloads mp3 file from YouTube
-- Adds track tags and album art automatically
+- Adds track tags including title, artist, album, album art, and lyrics automatically
 - Completely free, you don't need any paid api keys (only free ones)
 
 ## How to use
@@ -12,6 +12,7 @@ Automatic music file maker.
 ### Prerequisites
 - [Node.js](https://nodejs.org)
 - [npm](https://www.npmjs.com/)
+- [git](https://git-scm.com/)
 - [ffmpeg](https://ffmpeg.org/download.html) (download and unzip at root)
 - [Last.fm API key](https://www.last.fm/api)
 - [YouTube Data API v3 key](https://console.cloud.google.com/marketplace/product/google/youtube.googleapis.com?q=search&referrer=search)
@@ -23,6 +24,7 @@ $ git clone
 $ cd Music-File-Maker
 $ npm install
 ```
+If you want, you can just download this repository instead of using ``git``.
 
 ### Step 2
 Create a file named ``options.json`` at root.
