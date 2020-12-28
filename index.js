@@ -134,7 +134,7 @@ rl.question("Enter search query: ", async function(keyword) {
                         }
 
                         mp3tag.update(tags, `./audio/audio-${audioID}.mp3`)
-                        console.log("\nResult: Success\nPress ctrl+c to exit.")
+                        console.log(`\nYour mp3 file is saved as audio-${audioID}.mp3 in audio folder.\nPress ctrl+c to exit.`)
                     })           
                 })
             })
