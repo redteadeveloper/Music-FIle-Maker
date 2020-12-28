@@ -4,7 +4,7 @@ Tired of downloading mp3 files and adding tags? Try using this automatic music f
 
 ## Features
 - Downloads mp3 file from YouTube
-- Adds track tags and album art automatically
+- Adds track tags including title, artist, album, album art, and lyrics automatically
 - Completely free, you don't need any paid api keys (only free ones)
 
 ## How to use
