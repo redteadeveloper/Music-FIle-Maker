@@ -1,4 +1,4 @@
-# Music-File-Maker
+# Music File Maker
 
 Automatic music file maker.
 
