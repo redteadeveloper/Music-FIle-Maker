@@ -22,7 +22,6 @@
     "last-fm": "^5.3.0",
     "node-fetch": "^2.6.1",
     "node-id3": "^0.2.1",
-    "youtube-mp3-downloader": "^0.7.6",
-    "ytdl-core": "^4.2.1"
+    "youtube-mp3-downloader": "^0.7.6"
   }
 }
