@@ -1,8 +1,8 @@
 # Music File Maker
 
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues/)
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/stargazers/)
+[![GitHub issues](https://img.shields.io/github/issues/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
+[![GitHub stars](https://img.shields.io/github/stars/redteadeveloper/Music-FIle-Maker.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/stargazers/)
 
 Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
 
