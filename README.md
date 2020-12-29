@@ -1,6 +1,15 @@
-# Music File Maker
+<h1 align="center">Music File Maker</h1>
+<h4 align="center">Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!</h4>
 
-Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
+<div align="center">
+
+[![GitHub license](https://img.shields.io/github/license/redteadeveloper/Music-FIle-Maker.svg)](https://github.com/redteadeveloper/Music-FIle-Maker/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
+[![Only 32 Kb](https://badge-size.herokuapp.com/redteadeveloper/Music-FIle-Maker/master/index.js)](https://github.com/redteadeveloper/Music-FIle-Maker/blob/master/index.js)
+[![GitHub stars](https://img.shields.io/github/stars/redteadeveloper/Music-FIle-Maker.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/stargazers/)
+
+</div>
 
 ## Features
 - Downloads mp3 file from YouTube
