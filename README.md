@@ -1,6 +1,8 @@
-# Music File Maker
+<h1 align="center>
+    Music File Maker  
+</h1>
 
-<p>
+<p align="center">
     
 <h4>Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!</h4>
 
