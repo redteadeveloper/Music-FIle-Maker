@@ -2,7 +2,7 @@
 
 <p>
     
-<h4>Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!</4>
+<h4>Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!</h4>
 <br>
 
 [![GitHub issues](https://img.shields.io/github/issues/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues/)
