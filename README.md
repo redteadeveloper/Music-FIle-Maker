@@ -1,7 +1,9 @@
 # Music File Maker
 
 [![GitHub issues](https://img.shields.io/github/issues/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/issues?q=is%3Aissue+is%3Aclosed)
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
 [![GitHub stars](https://img.shields.io/github/stars/redteadeveloper/Music-FIle-Maker.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/stargazers/)
 
 ## About
