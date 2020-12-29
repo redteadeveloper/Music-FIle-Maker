@@ -4,7 +4,9 @@
 [![GitHub pull-requests](https://img.shields.io/github/issues-pr/redteadeveloper/Music-FIle-Maker.svg)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/pull/)
 [![GitHub stars](https://img.shields.io/github/stars/redteadeveloper/Music-FIle-Maker.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/redteadeveloper/Music-FIle-Maker/stargazers/)
 
-### Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
+## About
+
+Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
 
 ## Features
 - Downloads mp3 file from YouTube
