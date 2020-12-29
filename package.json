@@ -22,6 +22,7 @@
     "last-fm": "^5.3.0",
     "node-fetch": "^2.6.1",
     "node-id3": "^0.2.1",
+    "one-line-print": "^1.0.0",
     "youtube-mp3-downloader": "^0.7.6"
   }
 }

@@ -5,6 +5,7 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const download = require('image-downloader')
 const mp3tag = require('node-id3')
+const oneline = require('one-line-print');
 const readline = require('readline')
 
 const rl = readline.createInterface({
@@ -12,7 +13,14 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-const opt = JSON.parse(fs.readFileSync('./options.json', 'utf8'));
+let opt
+
+try {
+    opt = JSON.parse(fs.readFileSync('./options.json', 'utf8'));
+} catch (error) {
+    console.log("I can't detect options.json!")
+    process.exit(0)
+}
 
 var dirRes = './audio';
 if (!fs.existsSync(dirRes)){
@@ -42,18 +50,23 @@ function makeid(length) {
 const lastfm = new LastFM(opt.lastFmKey)
 const search = new YouTube(opt.youtubeKey)
 
-rl.question("Enter search query: ", async function(keyword) {
+rl.question("\nEnter YouTube search query: ", async function(keyword) {
 
     const videosearched = await search.searchVideos(keyword)
 
-    console.log("Downloading: " + videosearched.url)
+    console.log("\nDownloading: " + videosearched.url)
 
     const audioID = makeid(5)
 
     YD.download(videosearched.id, `audio-${audioID}.mp3`);
+    
+    YD.on("progress", function(progress) {
+        oneline.line(`${Math.round(progress.progress.percentage)}% downloaded`);
+    });
+
     YD.on("finished", async function(err, data) {
         
-        console.log("Track download finished\n")
+        oneline.line("Track download finished\n\n")
         
         rl.question("Enter track info ( <artist> || <track> || <album> ): ", async function(info) {
 
@@ -64,7 +77,7 @@ rl.question("Enter search query: ", async function(keyword) {
 
                 if (err) {
                     console.log(err)
-                    console.log("Error occurred while searching track info, operation stopped")
+                    console.log("Error occurred while searching track info, operation stopped\n")
                     process.exit(0)
                 }
 
@@ -72,7 +85,7 @@ rl.question("Enter search query: ", async function(keyword) {
 
                     if (err) {
                         console.log(err)
-                        console.log("Error occurred while searching album info, operation stopped")
+                        console.log("Error occurred while searching album info, operation stopped\n")
                         process.exit(0)
                     }
 
@@ -87,14 +100,14 @@ rl.question("Enter search query: ", async function(keyword) {
                     let albumData = await fetch(`https://itunes.apple.com/search?term=${trackArtist}+${trackAlbum}+${trackTitle}&limit=1&entity=song`)
                     let res = await albumData.json()
                     if (res.resultCount == 0) {
-                        console.log("Couldn't find album cover, operation stopped")
+                        console.log("Couldn't find album cover, operation stopped\n")
                         process.exit(0)
                     }
 
                     let lyricsRes = await fetch(`https://some-random-api.ml/lyrics/?title=${encodeURI(trackArtist)}_${encodeURI(trackTitle)}`)
                     lyricsRes = await lyricsRes.json()
                     if (!lyricsRes.lyrics) {
-                        console.log("Couldn't find lyrics, operation stopped")
+                        console.log("Couldn't find lyrics, operation stopped\n")
                         process.exit(0)
                     }
 
@@ -134,7 +147,7 @@ rl.question("Enter search query: ", async function(keyword) {
                         }
 
                         mp3tag.update(tags, `./audio/audio-${audioID}.mp3`)
-                        console.log(`\nYour mp3 file is saved as audio-${audioID}.mp3 in audio folder.\nPress ctrl+c to exit.`)
+                        console.log(`\nYour mp3 file is saved as audio-${audioID}.mp3 in audio folder.\nPress ctrl+c to exit.\n`)
                     })           
                 })
             })
