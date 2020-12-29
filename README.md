@@ -1,6 +1,10 @@
 # Music File Maker
 
-Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/pull/)
+[![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://github.com/Naereen/StrapDown.js/blob/master/strapdown.min.js)
+
+#### Tired of downloading mp3 files and adding tags? Try using this automatic music file maker!
 
 ## Features
 - Downloads mp3 file from YouTube
