@@ -41,7 +41,7 @@ Create a file named ``options.json`` at root.
 {
     "youtubeKey": "youtube-api-key-here",
     "lastFmKey": "last-fm-api-key-here",
-    "ffmpegPath": "path-to-ffmpeg-exe-here" 
+    "ffmpegPath": "path-to-ffmpeg-binary-here" 
 }
 ```
 
