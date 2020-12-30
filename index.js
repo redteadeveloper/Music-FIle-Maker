@@ -47,6 +47,10 @@ function makeid(length) {
     return result;
 }
 
+function cleanStr(string) {
+    return string.replace('\\', '').replace('/', '').replace('*', '').replace('"', '').replace('?', '').replace('<', '').replace('>', '').replace('|', '').replace(':', '')
+}
+
 const lastfm = new LastFM(opt.lastFmKey)
 const search = new YouTube(opt.youtubeKey)
 
@@ -147,7 +151,15 @@ rl.question("\nEnter YouTube search query: ", async function(keyword) {
                         }
 
                         mp3tag.update(tags, `./audio/audio-${audioID}.mp3`)
-                        console.log(`\nYour mp3 file is saved as audio-${audioID}.mp3 in audio folder.\nPress ctrl+c to exit.\n`)
+
+                        fs.rename(`./audio/audio-${audioID}.mp3`, `./audio/${cleanStr(trackArtist)} - ${trackTitle}.mp3`, function(err) {
+                            if (err) {
+                                console.log(err)
+                                console.log("Error occurred while renaming file, operation stopped\n")
+                                process.exit(0)
+                            }
+                            console.log(`\nYour mp3 file is saved as ${cleanStr(trackArtist)} - ${trackTitle}.mp3 in audio folder.\nPress ctrl+c to exit.\n`)
+                        })
                     })           
                 })
             })
