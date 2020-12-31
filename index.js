@@ -5,7 +5,7 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const download = require('image-downloader')
 const mp3tag = require('node-id3')
-const oneline = require('one-line-print');
+const oneline = require('one-line-print')
 const readline = require('readline')
 
 const rl = readline.createInterface({
@@ -33,7 +33,7 @@ if (!fs.existsSync(dirImg)){
 }
 
 var YD = new YoutubeMp3Downloader({
-    "ffmpegPath": opt.ffmpegPath,
+    "ffmpegPath": "./node_modules/ffmpeg-static/ffmpeg.exe",
     "outputPath": "./audio",
 });
 
