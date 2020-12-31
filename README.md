@@ -22,7 +22,6 @@
 - [Node.js](https://nodejs.org)
 - [npm](https://www.npmjs.com/)
 - [git](https://git-scm.com/)
-- [ffmpeg](https://ffmpeg.org/download.html) (download and unzip at root)
 - [Last.fm API key](https://www.last.fm/api)
 - [YouTube Data API v3 key](https://console.cloud.google.com/marketplace/product/google/youtube.googleapis.com?q=search&referrer=search)
 
@@ -40,8 +39,7 @@ Create a file named ``options.json`` at root.
 ```json
 {
     "youtubeKey": "youtube-api-key-here",
-    "lastFmKey": "last-fm-api-key-here",
-    "ffmpegPath": "path-to-ffmpeg-binary-here" 
+    "lastFmKey": "last-fm-api-key-here"
 }
 ```
 
