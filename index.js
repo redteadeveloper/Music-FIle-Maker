@@ -152,13 +152,13 @@ rl.question("\nEnter YouTube search query: ", async function(keyword) {
 
                         mp3tag.update(tags, `./audio/audio-${audioID}.mp3`)
 
-                        fs.rename(`./audio/audio-${audioID}.mp3`, `./audio/${cleanStr(trackArtist)} - ${trackTitle}.mp3`, function(err) {
+                        fs.rename(`./audio/audio-${audioID}.mp3`, `./audio/${cleanStr(trackArtist)} - ${cleanStr(trackTitle)}.mp3`, function(err) {
                             if (err) {
                                 console.log(err)
                                 console.log("Error occurred while renaming file, operation stopped\n")
                                 process.exit(0)
                             }
-                            console.log(`\nYour mp3 file is saved as ${cleanStr(trackArtist)} - ${trackTitle}.mp3 in audio folder.\nPress ctrl+c to exit.\n`)
+                            console.log(`\nYour mp3 file is saved as ${cleanStr(trackArtist)} - ${cleanStr(trackTitle)}.mp3 in audio folder.\nPress ctrl+c to exit.\n`)
                         })
                     })           
                 })
