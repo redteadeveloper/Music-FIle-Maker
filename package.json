@@ -24,6 +24,6 @@
     "node-fetch": "^2.6.1",
     "node-id3": "^0.2.2",
     "one-line-print": "^1.0.0",
-    "youtube-mp3-downloader": "^0.7.6"
+    "youtube-mp3-downloader": "^0.7.7"
   }
 }
