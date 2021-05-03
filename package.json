@@ -22,7 +22,7 @@
     "image-downloader": "^4.0.2",
     "last-fm": "^5.3.0",
     "node-fetch": "^2.6.1",
-    "node-id3": "^0.2.2",
+    "node-id3": "^0.2.3",
     "one-line-print": "^1.0.0",
     "youtube-mp3-downloader": "^0.7.6"
   }
