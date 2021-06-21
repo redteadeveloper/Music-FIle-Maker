@@ -18,7 +18,7 @@
   "homepage": "https://github.com/redteadeveloper/Music-File-Maker#readme",
   "dependencies": {
     "discord-youtube-api": "^0.1.0",
-    "ffmpeg-static": "^4.2.7",
+    "ffmpeg-static": "^4.4.0",
     "image-downloader": "^4.0.2",
     "last-fm": "^5.3.0",
     "node-fetch": "^2.6.1",
